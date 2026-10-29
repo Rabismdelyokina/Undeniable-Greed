@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bullet Shot</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #100d20;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff7bce;
+      margin-bottom: 8px;
+    }
+
+    #game {
+      width: min(480px, 95vw);
+      height: auto;
+      border: 2px solid #ff7bce;
+      background: #17132c;
+      display: block;
+      margin: 15px auto;
+    }
+
+    #game:fullscreen {
+      width: 100vw;
+      height: 100vh;
+      max-width: none;
+      border: 0;
+      margin: 0;
+      object-fit: contain;
+      background: #100d20;
+    }
+
+    #fullscreenButton {
+      padding: 8px 14px;
+      border: 1px solid #ff7bce;
+      border-radius: 6px;
+      background: #2a1d3b;
+      color: white;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Bullet Shot</h1>
+  <p>
+    P = Atas | L = Kiri | ; = Bawah | ' = Kanan<br>
+    Z = Tembak | X = Bomb
+  </p>
+
+  <canvas id="game" width="480" height="640"></canvas>
+  <button id="fullscreenButton" type="button">Layar penuh</button>
+
+  <p id="status">Bersiap melawan boss!</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
